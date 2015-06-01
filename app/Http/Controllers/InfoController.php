@@ -494,6 +494,7 @@ WHERE (((dbo.MOVCONT3.MvCFch) Between convert(datetime, '". $input['fecha_inicio
     
     /**
      * Genera el reporte del censo en formato xlsx
+     * 
      */
     public function censo()
     {

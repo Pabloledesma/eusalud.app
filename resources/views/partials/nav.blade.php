@@ -43,7 +43,7 @@
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Informes <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                @if( \Auth::user()->user_type == 'Provider' || \Auth::user()->user_type == 'SuperAdmin' )
+                                @if( \Auth::user()->user_type == 'Provider' || \Auth::user()->user_type == 'Super Admin' )
                                     <li><a href="{{ url('info/form_certificado_pagos_profesionales') }}">Certificado de pagos a profesionales de la salud</a></li>
                                     <li><a href="{{ url('info/form_certificado_ica') }}">Certificado de retensión industria y comercio (ICA)</a></li>
                                 @endif
