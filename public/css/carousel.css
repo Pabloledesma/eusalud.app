@@ -1,0 +1,388 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7/04/2015, 07:29:57 AM
+    Author     : PABLO
+*/
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+html, h1, h2, h3, h4, a, label {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a { color: #008B85 }
+
+h2 {text-align: center; color: #009089}
+
+body {
+
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+.header {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+.container { margin-top: 20px; }
+
+.no_border {
+    width: auto;
+    padding: 30px !important;
+}
+
+.btn-green {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;  
+}
+
+.btn-green:hover {
+    background: #008B85;
+    color: #ffffff;
+}
+
+.green {
+    font-size:1.2em;
+    border-radius: 20px;
+}
+
+.green th{
+    color: #fff;
+    text-align:center;
+    background-color: #1E7F74 !important;
+}
+
+.green tr{text-align: center;}
+
+.green > tbody > tr:nth-of-type(odd){
+    background-color: #e7e7e7 !important;
+
+}
+
+.usuarios th{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.usuarios td {
+    padding: 5px 10px 5px 10px;
+    text-align: left;
+}
+
+
+.logo-eusalud {
+    margin-left: 20px;
+}
+
+.footer p{
+    text-align: center; 
+}
+
+.jumbotron {
+    margin-top: 30px
+}
+/**** GALERIA ***/
+.galeria {
+    padding: 5px;
+    border-radius: 10px;
+    margin:0 15px 15px 15px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.galeria:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 7px 7px 7px #5a5a5a;
+}
+
+.container img { cursor: pointer; }
+
+.img-full {
+    height: 400px;
+    width: 700px;
+    margin: 10% auto;
+}
+
+.img-full img {
+    float: right;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+/*.navbar {
+    margin: 0 !important;
+}*/
+.navbar-brand img{
+    width: 38%;
+}
+
+.navbar-wrapper {
+    position: relative !important; 
+}
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+
+}
+
+.navbar-brand {
+    margin-left: 20px !important;
+}
+
+.navbar-inverse {
+    border: none;
+}
+
+.navbar-inverse .navbar-brand {
+    color: rgb(255,255,255);
+}
+
+.navbar-inverse {
+    background-color: rgb(255,255,255);
+    border-top: 1px solid rgb(200,200,200);
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+    color: #fff;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: rgba(255,109,58,0.5);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    border-radius: 7px;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin: 0 4px 0 2px;
+    color: #048C86;
+    -webkit-transition: background-color 1s, color 1s;
+    transition: background-color 1s, color 1s;
+    font-size: 1.2em;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #ffffff;
+    background-color: #048C86;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+    color: #fff;
+    background-color: rgba(225, 109, 58, 1);
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+.info-rigth {
+    float: right;
+    margin-right: 10%;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    height: 460px;
+    margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 460px;
+    
+}
+.carousel-inner > .item > img {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 460px;
+}
+
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left,color-stop(rgba(0,0,0,0.3) 0),color-stop(rgba(0,0,0,0.0001) 100%));
+    background-image: linear-gradient(to right,rgba(0,0,0,0.3) 0,rgba(0,0,0,0.0001) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000',endColorstr='#00000000',GradientType=1);
+}
+
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,color-stop(rgba(0,0,0,0.0001) 0),color-stop(rgba(0,0,0,0.3) 100%));
+    background-image: linear-gradient(to right,rgba(0,0,0,0.0001) 0,rgba(0,0,0,0.3) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#80000000',GradientType=1);
+}
+
+.carousel-indicators li {
+    border: 1px solid #E16D3A !important;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
+
+/*
+ * Forms
+ ***************************************************/
+
+label.error {
+    color:red
+}
+
+.form-control .error {
+    border-color:rgb(225,3,3) !important;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(225,3,3,0.6);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(225,3,3,0.6);
+}
+
+/*
+* Clientes
+************/
+
+.clientes {
+    padding: 50px;
+}
+
+.banner_clientes {
+    cursor: move; 
+    left: 0px; top: 0px; 
+    width: 809px; 
+    height: 150px; 
+    overflow: hidden;  
+    
+    position: absolute; 
+    
+}
+
+#slider1_container {
+    cursor: move; 
+    left: 0px; top: 0px; 
+    width: 809px; 
+    height: 150px; 
+    overflow: hidden;
+    margin: 0 auto;
+}
+.jssora03l, .jssora03r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 55px;
+                height: 55px;
+                cursor: pointer;
+                background: url('../img/a03.png') no-repeat;
+                overflow: hidden;
+            }
+.jssora03l { background-position: -3px -33px; }
+.jssora03r { background-position: -63px -33px; }
+.jssora03l:hover { background-position: -123px -33px; }
+.jssora03r:hover { background-position: -183px -33px; }
+.jssora03l.jssora03ldn { background-position: -243px -33px; }
+.jssora03r.jssora03rdn { background-position: -303px -33px; }

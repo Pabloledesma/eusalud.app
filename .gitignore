@@ -1,0 +1,5 @@
+/vendor
+/node_modules
+.env
+/desarrollo_eusalud/nbproject/private
+/nbproject/private/
