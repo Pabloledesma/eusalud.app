@@ -14,7 +14,8 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="{{ url('inicio') }}">Inicio</a></li>
+                        <li><a href="http://www.eusalud.com">Inicio</a></li>
+                        <!-- Esta información esta repetida en el portal de Joomla
                         <li><a href="{{ url('quienes-somos') }}">Quienes somos</a></li>
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Servicios <span class="caret"></span></a>
@@ -35,7 +36,7 @@
                                 <li><a href="{{ url('nuestras-clinicas/pacientes_cronicos') }}">Pacientes Crónicos</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('contacto') }}">Contacto</a></li>
+                        <li><a href="{{ url('contacto') }}">Contacto</a></li>-->
                         @if( Auth::guest() )
                         <li><a href="{{ url('/auth/login') }}">Iniciar Sesión</a></li>
 
