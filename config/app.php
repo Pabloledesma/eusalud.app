@@ -1,6 +1,4 @@
 <?php
-
-
 return [
 
 	/*
@@ -15,7 +13,6 @@ return [
 	*/
 
 	'debug' => env('APP_DEBUG', true),
-        //'debug' => false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -28,7 +25,7 @@ return [
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://eusalud.app',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -115,9 +112,8 @@ return [
 		/*
 		 * Laravel Framework Service Providers...
 		 */
-                'Maatwebsite\Excel\ExcelServiceProvider',
-                //'Barryvdh\DomPDF\ServiceProvider',
-                'Vsmoraes\Pdf\PdfServiceProvider',
+        'Maatwebsite\Excel\ExcelServiceProvider',
+        'Vsmoraes\Pdf\PdfServiceProvider',
 		'Illuminate\Foundation\Providers\ArtisanServiceProvider',
 		'Illuminate\Auth\AuthServiceProvider',
 		'Illuminate\Bus\BusServiceProvider',
@@ -140,18 +136,18 @@ return [
 		'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
-                'Illuminate\Html\HtmlServiceProvider',
+        'Illuminate\Html\HtmlServiceProvider',
 
 		/*
 		 * Application Service Providers...
 		 */
-                "LaravelCaptcha\Providers\LaravelCaptchaServiceProvider",
+        "LaravelCaptcha\Providers\LaravelCaptchaServiceProvider",
 		'App\Providers\AppServiceProvider',
 		'App\Providers\BusServiceProvider',
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
-                'Laracasts\Flash\FlashServiceProvider'
+        'Laracasts\Flash\FlashServiceProvider'
 
 	],
 
@@ -200,13 +196,11 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
-                'PDF'       => 'Vsmoraes\Pdf\PdfFacade',
-                'Form'      => 'Illuminate\Html\FormFacade',
-                'Html'      => 'Illuminate\Html\HtmlFacade',
-                'Excel'     => 'Maatwebsite\Excel\Facades\Excel',
-                'Flash'     => 'Laracast\Flash\Flash'
-                //'PDF'       => 'Barryvdh\DomPDF\Facade' problemas al cargar
-            
+        'PDF'       => 'Vsmoraes\Pdf\PdfFacade',
+        'Form'      => 'Illuminate\Html\FormFacade',
+        'Html'      => 'Illuminate\Html\HtmlFacade',
+        'Excel'     => 'Maatwebsite\Excel\Facades\Excel',
+        'Flash'     => 'Laracast\Flash\Flash'            
           
 	],
 
